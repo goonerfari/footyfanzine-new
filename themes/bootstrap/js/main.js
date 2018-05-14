@@ -74,8 +74,8 @@
         $('#old-school-container').show();
         $('a[href*="/old-school"]').addClass('is_active');
         /* Vintage Ball */
-        var oldSrc = '/sites/footyzone.dev.dd/files/footylogo.png';
-        var newSrc = '/sites/footyzone.dev.dd/files/vintageball.png';
+        var oldSrc = '/sites/default/files/footylogo.png';
+        var newSrc = '/sites/default/files/vintageball.png';
         $('#top-navigation a:hover').css('color', 'rgba(252,239,222, .97)');
 
         $('#top-navigation ul.menu.nav.navbar-nav.navbar-right a, a.navbar-brand').mouseenter(function() {
@@ -114,7 +114,7 @@
             .css({
                 'border-width': '15px',
                 'border-style': 'solid',
-                'border-image': 'url(/sites/footyzone.dev.dd/files/frame.png) 60 round',
+                'border-image': 'url(/sites/default/files/frame.png) 60 round',
                 'margin-bottom': '0px !important',
                 'margin-top': '15px !important'
             });
