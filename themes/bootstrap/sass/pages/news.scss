@@ -1,0 +1,233 @@
+ /* News */
+
+#block-latest-scoop {
+    margin-top: 27px;
+    margin-bottom: 25px;
+    h2.block-title {
+        font-family: $font_elsie;
+        color: $blue;
+        font-size: 40px;
+        margin-bottom: 40px;
+        margin-top: 4px;
+    }
+
+    .col-md-6 {
+        padding-left: 8px;
+        padding-right: 8px;
+    }
+    .views-view-grid .views-row {
+        margin-top: 17px;
+    }
+    .table {
+        width: initial;
+        border: 1px solid rgba(0,0,0,0.3);
+        tr {
+            background-color: rgba(239, 241, 243, .3);
+            border-bottom: 1px solid rgba(0,0,0,0.3);
+        }
+        tr, tr:first-child {
+            border-top: 1px solid rgba(0,0,0,0.3) !important;
+        }
+        .views-field-title {
+            line-height: 1.1;
+            vertical-align: bottom;
+            padding: 0px 5px 50px;
+            a {
+                font-weight: 300;
+            }
+        }
+        td.views-field.views-field-field-image.views-align-center {
+            width: 50%;
+            border-top: 1px solid rgba(0,0,0,0.3);
+        }
+        .views-field-title, .views-field-addtoany-share {
+            a {
+                font-family: $font_bitter;
+                color: $grey;
+                font-size: 22px;
+            }
+        }
+        .views-field-addtoany-share {
+            vertical-align: middle;
+        }
+        .a2a_kit a {
+            span, span:hover {
+                border-radius: 49% !important;
+            }   
+        }
+    }
+    ul.pager.js-pager__items {
+        display: none !important;
+    }
+}
+
+#block-latest-epl, #block-latest-uefacl, #block-latest-laliga {
+    h2.block-title {
+        margin-bottom: 28px;
+        font-family: $font_elsie;
+        display: block;
+        color: $blue;
+    }
+}
+
+/*----LARGE ---*/
+@media #{$large} {
+    .article-title {
+        height: 63px;
+    }
+}
+/*----LARGE + DESKTOP---*/
+@media #{$large-desktop} {
+
+    #block-latest-scoop {
+
+        .view-content {
+            margin: 0px 15px 0px 0px;
+        }
+        
+        td.views-field.views-field-addtoany-share.views-align-left, td.views-field.views-field-title.views-align-left {
+            position: absolute;
+            border: none;
+        }
+        td.views-field.views-field-title.views-align-left {
+            margin-top: 35px;
+            padding-left: 0px;
+            padding-right: 35px;
+        }
+        td.views-field.views-field-field-image.views-align-center {
+            img {
+                min-height: 175px;
+                max-height: 175px;
+            }
+        }
+        td.views-field.views-field-addtoany-share.views-align-left {
+            margin-top: 120px;
+            margin-left: 135px;
+        }
+    }
+    .view-news-view {
+        margin-top: 15px;
+        margin-right: 65px;
+        h1 {
+            margin-top: 30px;
+            margin-bottom: 50px;
+        }
+        .views-field-title {
+            font-size: 20px;
+            line-height: 1;
+            padding-top: 10px;
+            padding-bottom: 7px;
+            a:hover {
+                color: $blue;
+            }
+        }
+        .views-field-body {
+            font-size: 15px;
+        }
+        .article-image img {
+            max-height: 270px;
+            min-height: 270px;
+        }
+    }
+    #block-latest-epl, #block-latest-uefacl, #block-latest-laliga {
+        h2.block-title {
+            padding-left: 0px;
+            padding-bottom: 7px;
+            font-size: 38px;
+        }
+        .article-title {
+            margin-top: 0px;
+            line-height: 1.1;
+        }
+    }
+}
+
+/*---- TABLET ----*/
+@media #{$tablet} {
+    
+    #block-latest-scoop {
+        td.views-field.views-field-addtoany-share.views-align-left, td.views-field.views-field-title.views-align-left {
+            position: absolute;
+            border: none;
+        }
+        td.views-field.views-field-title.views-align-left {
+            margin-top: 25px;
+            padding-left: 0px !important;
+            margin-right: 35px;
+        }
+        td.views-field.views-field-field-image.views-align-center {
+            img {
+                min-height: 175px;
+                max-height: 175px;
+            }
+        }
+        td.views-field.views-field-addtoany-share.views-align-left {
+            margin-top: 110px;
+        }
+        a {
+            font-size: 16px !important;
+        }
+    }
+    .article-title {
+        margin-top: 0px;
+        line-height: 1.2;
+    }
+}
+
+/*---- MOBILE ----*/
+@media #{$mobile} {
+    #block-latest-scoop {
+        
+        td.views-field.views-field-field-image.views-align-center {
+            width: 57% !important;
+            img {
+                max-height: 125px;
+                min-height: 125px; 
+                margin-top: 0px;       
+            }
+        }
+
+        td.views-field.views-field-addtoany-share.views-align-left, 
+        td.views-field.views-field-title.views-align-left {
+            border: none;
+        }
+        td.views-field.views-field-title {
+                position: absolute;
+                margin-top: 15px;
+                vertical-align: middle;    
+                padding-bottom: 0px;
+                padding-right: 23px; 
+                margin-left: -4px;
+            a {
+                font-size: 15px;
+            }
+        }
+        td.views-field.views-field-addtoany-share.views-align-left {
+            position: relative;
+            vertical-align: bottom;
+            padding-bottom: 10px;
+        }
+        .a2a_kit a span {
+            width: 100%;
+            margin-left: 0px;
+            padding: 4px;
+        }
+        .views-view-grid .views-row {
+            margin-top: 0px;
+            h3.views-field.views-field-title {
+                height: initial;
+                margin-bottom: 8px;
+            }
+        }
+    }
+    #block-latest-epl, #block-latest-uefacl, #block-latest-laliga {
+        h2.block-title {
+            padding-left: 5px;
+            font-size: 33px;
+        }
+        .article-title {
+            margin-top: 0px;
+            line-height: 1.1;
+        }
+    }
+}

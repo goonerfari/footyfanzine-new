@@ -1,0 +1,7 @@
+teaminfo.content:
+  path: 'teams/{tid}'
+  defaults:
+    _controller: '\Drupal\teaminfo\Controller\TeamInfoController::content'
+    _title: 'Team Info'
+  requirements:
+    _permission: 'access content'

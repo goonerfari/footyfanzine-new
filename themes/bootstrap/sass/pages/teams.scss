@@ -1,0 +1,140 @@
+.view-team-news {
+    h1 {
+        margin-top: 30px;
+        margin-bottom: 20px;
+        color: $blue;
+        padding-left: 5px;
+        font-size: 35px;
+    }
+    img {
+        width: 100%;
+        height: 300px;
+    }
+    h3 a {
+        font-family: $font_bitter;
+        color: $grey;
+        font-size: 22px;
+        line-height: .5;
+        &:hover {
+            color: $blue;
+        }
+    }
+    p {
+        font-weight: 300;
+        padding-top: 7px;
+    }
+}
+.view-team-info {
+    h1.field-content {
+        font-size: 30px;
+        font-weight: bold;
+    }
+}
+.teams {
+    .addtoany_list {
+        margin-left: -3px;
+        line-height: 58px !important;
+        margin-bottom: 7px !important;
+    }
+    .field--name-field-image img {
+        width: 140px;
+        height: 140px;
+    }
+    .field--label, .field--item {
+        font-family: $font_ubuntu;
+    }
+    .field--label {
+        font-weight: 500;
+    }
+    .field--item {
+        margin-top: 0px !important;
+        margin-bottom: 15px;
+        font-weight: 400;
+        color: $blue;
+        a {
+            color: $blue;
+            &:hover {
+                color: $orange;
+            }
+        }
+    }
+    .field--name-field-title {
+        font-family: $font_bitter;
+        font-weight: 500;
+        letter-spacing: .01pt;
+        font-size: 40px;
+    }
+    .field--name-field-stadium-image {
+        margin-top: -64px;
+        width: 66%;
+        float: right;
+        img {
+            height: 333px;
+        }
+    }
+}
+#block-team-info {
+    .views-label-field-club-website {
+        margin-bottom: 15px;
+        padding-bottom: 7px;
+    }
+    .views-label-field-club-website, .views-field-field-club-website a, .views-field-field-stadium-name, .views-label-field-stadium-image {
+        font-family: $font_ubuntu;
+        font-weight: 400;
+    }
+    .views-field-field-stadium-name {
+        margin-top: 15px;
+        div.field-content {
+            color: $blue;
+        }
+    }
+    .views-field-field-club-website a {
+        margin-top: 10px;
+        color: $blue;
+        font-size: 14px;
+    }
+
+    .views-field-field-club-logo {
+        text-align: center;
+        img {
+            height: 150px !important;
+            width: 150px !important;
+            margin-left: auto !important;
+            margin-right: auto !important;
+        }
+    }
+    span.views-label.views-label-field-stadium-image {
+        padding-top: 6px;
+        display: inline-block;
+    }
+    .views-field-field-stadium-image {
+        img {
+            margin-top: 6px;
+            margin-bottom: 6px;
+            height: 200px;
+        }
+    }
+}
+
+
+// /*---- LARGE ----*/    
+// @media #{$large} {
+//     .views-field-field-club-logo {
+//         img {
+//             height: 150px;
+//             width: 150px;
+//         }
+//     }
+// }
+
+// /*---- MOBILE ----*/
+
+// @media #{$mobile} {
+
+//     .views-field-field-club-logo {
+//         img {
+//             height: 125px !important;
+//             width: 125px !important;
+//         }
+//     }
+// }

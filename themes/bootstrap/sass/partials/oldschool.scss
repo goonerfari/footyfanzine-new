@@ -1,0 +1,244 @@
+/* Old School */
+
+.old-school, #old-school-container {
+    background-image: url('/sites/footyzone.dev.dd/files/oldschoolbg.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+#block-old-school-front {
+    h1, .view-image, .article-title {
+        color: $wheat !important;
+    }
+     
+}
+#block-legends {
+    margin-top: 20px;
+    margin-bottom: 25px;
+    text-align: center;
+    padding-top: 25px;
+    padding-bottom: 5px;
+    background-color: $grey;   
+    .form-group {
+        margin-bottom: 0px;
+        .views-field-field-logo {
+            border-image: url('/sites/footyzone.dev.dd/files/frame.png') 60 round;
+            border: 10px solid transparent;
+        }
+        img {
+            min-height: 200px;
+            max-height: 200px;
+        }
+        p {
+            padding-top: 15px;
+            color: $wheat;
+            font-size: 25px;
+        }
+    }
+}
+.view-old-school {
+    padding-right: 0px;
+    padding-left: 10px;
+    .col-xs-12 {
+        padding-right: 0px !important;
+    }
+}
+.view-old-school-page {
+    margin-left: 15px;
+}
+.view-old-school, .view-old-school-page {
+    padding-top: 20px;
+    padding-bottom: 5px;
+    .view-header h2 {
+        margin: 30px auto;
+    }
+    .views-field.views-field-title {
+        font-size: 20px;        
+        a {
+            color: $wheat !important;
+        }
+    }
+}
+.view-old-school, .view-old-school-page, #block-old-school-front {
+    
+    .views-field-field-image {
+        border-image: url('/sites/footyzone.dev.dd/files/frame.png') 60 round;
+        border: 10px solid transparent;
+        margin-bottom: 0px !important;
+        margin-top: 0px;
+        img {
+            min-height: 350px;
+            max-height: 350px;
+            width: 100%;
+        }            
+    }
+}
+#old-school-container {
+    h2.block-title {
+        margin-top: 15px;
+        padding: 40px 9px 30px;
+        text-align: center;
+        background-color: $grey;
+        font-family: $font_shade;
+        color: $wheat;
+    }
+    .views-view-grid .views-row {
+        margin-bottom: 35px;
+        background-color: $grey;
+        padding-bottom: 0px;
+        padding-top: 0px;
+    }
+    .view-content {
+        margin-top: 30px;
+        padding: 10px 0px;
+        .views-field-field-logo {
+            margin-top: 35px;
+            // border: 30px solid #222;
+            border-image: url('/sites/footyzone.dev.dd/files/frame.png') 60 round;
+            border: 10px solid transparent;
+            img {
+                min-height: 200px;
+                max-height: 200px;
+            }
+        }
+        .views-field-description__value {
+            text-align: center;
+            padding-top: 15px;
+            font-weight: 400;
+            font-size: 24px;
+            color: $wheat;
+            a {
+                color: $wheat !important;
+            }
+        }
+    }
+}
+.view-old-school-page {
+    color: $grey;
+    padding-bottom: 12px;
+    h2.block-title {
+        font-size: 26px;
+        color: $wheat;
+        padding-top: 0px;
+        font-family: $font_bitter;
+        font-weight: bold;
+        margin-bottom: 27px;
+    }
+    h3 a {
+        color: rgba(246, 235, 215, 0.98);
+    }
+    .views-field-field-tags {
+        margin: 5px 0px 8px;
+        a {
+            background-color: rgba(246, 235, 215, 0.98) !important;
+            border-color: rgba(246, 235, 215, 0.98);
+            color: $grey;
+            &:hover {
+                background-color: $grey !important;
+            }
+        }
+    }
+    a, .views-field-title a {
+        color: $grey;
+        &:hover {
+            color: $grey;
+        }
+    }
+    .views-field.views-field-body.ubuntu {
+        p {
+            padding-top: 5px;
+            font-size: 16px;
+        }
+    }
+}
+/* Sidebar */
+
+#block-oldschool-posts {
+    margin-bottom: 30px;
+    margin-top: -30px;
+    background-color: $grey !important;
+    .form-group {
+        margin-bottom: 3px;
+    }
+    td, tr {
+        background-color: $grey !important;
+    }
+    .table-striped > tbody > tr, .table-striped > tbody > tr:nth-of-type(odd), .table-striped > tbody > tr:nth-of-type(even), .table-striped > tbody > tr:hover, tr {
+        color: $wheat;
+        background-color: $grey !important;
+        a {
+            color: $wheat;
+        }
+    }
+    h2.block-title {
+        color: $wheat;
+        font-family: $font_shade;
+        background-color: $grey;
+        padding: 25px 0px 20px 10px;
+        font-size: 26px;
+        margin: 0px;
+    }
+    .table {
+        margin-bottom: 0px;
+    }
+}
+#block-classic-twitter {
+    background-color: $grey !important;
+    h2.block-title {
+        padding: 31px 10px 18px;
+        margin: 0px 0px -4px;    
+        color: $wheat;
+        font-family: $font_shade;
+        background-color: $grey;
+        font-size: 26px;
+    }
+}
+
+
+/* Twitter */
+#block-twitterblock .table {
+    margin-bottom: -8px;
+}
+
+@media #{$tablet} {
+    #block-legends .form-group img {
+        max-height: 275px;
+        min-height: 275px;
+    }
+}
+
+/*---- TABLET-MOBILE ----*/
+
+@media #{$tablet-mobile} {
+
+    .view-old-school-page {
+        padding-top: 15px;
+        h2.block-title {
+            font-size: 20px;
+            padding-top: 0px;
+            margin-top: 15px;
+        }
+    }
+    #block-old-school-front {
+        .article-title {
+            margin-top: 0px;
+            padding-top: 0px;
+            line-height: 1;
+        }
+        h2.block-title {
+            margin-bottom: 15px !important;
+        }
+        .view-content .views-field-field-image {
+            img {
+                max-height: 180px;
+                min-height: 180px;
+                width: 100%;
+            }
+        }
+    }
+    #block-oldschool-posts h2.block-title {
+        margin-bottom: 18px !important;
+        margin-left: 0px;
+    }
+}
+

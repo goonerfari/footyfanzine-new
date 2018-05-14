@@ -1,0 +1,11 @@
+name: Just Another Social Module (JASM)
+description: "Provides a single place to configure and subsequently promote your site's presence on other sites, like your company's Facebook page, or your company's Twitter feed."
+package: JASM
+
+type: module
+# core: 8.x
+# Information added by Drupal.org packaging script on 2017-07-18
+version: '8.x-2.x-dev'
+core: '8.x'
+project: 'jasm'
+datestamp: 1500383645

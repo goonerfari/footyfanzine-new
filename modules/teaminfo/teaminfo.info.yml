@@ -1,0 +1,9 @@
+name: Team Info
+type: module
+description: Team Info Block.
+core: 8.x
+package: Custom
+dependencies:
+  - node
+  - block
+  

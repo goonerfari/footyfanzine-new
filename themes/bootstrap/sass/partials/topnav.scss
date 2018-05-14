@@ -1,0 +1,88 @@
+/* Top Nav */
+#top-navigation {
+    background-color: $blue;
+
+    a {
+        color: $white;
+    }
+    .nav>li>a:hover {
+        background: transparent;
+        color: $black;
+    }
+    a.logo.navbar-btn.pull-left {
+        margin: 0px;
+        padding: 10px;
+        background-color: transparent !important;
+    }
+    
+    .logo img {
+        height: 60px;
+        border: .5px solid $black;
+        border-radius: 50%;
+    }
+    a.name.navbar-brand {
+        text-transform: capitalize;
+        height: 100%;
+        font-family: 'Bungee Shade';
+        font-size: 24px;
+    }
+    ul.menu.nav.navbar-nav.navbar-right a {
+        font-family: $font_ubuntu;
+        text-transform: capitalize;
+        font-weight: 500;
+        letter-spacing: .3pt;
+    }
+}
+
+/*---- LARGE ----*/
+
+@media #{$large} {
+
+    #top-navigation {
+        .container {
+            padding-left: 100px;
+            padding-right: 100px;
+        }
+    }
+}
+
+/*----LARGE + DESKTOP---*/
+
+@media #{$large-desktop} {
+    #top-navigation {
+        a.name.navbar-brand {
+            padding: 35px 20px 0px 10px;
+        }
+    }
+}
+
+/*---- DESKTOP ----*/
+
+@media #{$desktop} {
+    #top-navigation {
+        .container {
+            padding-left: 30px;
+            padding-right: 50px;
+        }
+    }
+}
+
+/*---- TABLET ----*/
+
+@media #{$tablet} {
+    .navbar-right {
+        margin-top: 30px;
+    }
+}
+
+/*---- MOBILE ----*/
+
+@media #{$mobile} {
+    #top-navigation {
+        display: none;
+        a.name.navbar-brand {
+            padding: 23px 0px 10px 10px;
+            font-size: 25px;
+        }
+    }
+}

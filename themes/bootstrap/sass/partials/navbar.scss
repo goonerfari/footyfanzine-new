@@ -1,0 +1,255 @@
+/* Main Navigation */
+
+#navbar-wrapper {
+    background-color: $white;
+    border-bottom: 1px solid $grey;
+    
+    ul.menu.nav.navbar-nav li {
+        margin-right: 15px;
+        a {
+            padding: 17px 6px 14px;
+            font-family: $font_ubuntu;
+            font-size: 18px;
+            text-transform: uppercase;
+            letter-spacing: .5pt;
+            color: $black;
+            font-weight: 600;
+        }
+    }
+    
+    .navbar-collapse ul.menu.nav.navbar-nav li a {
+        border-bottom: 3.5px solid $white;
+    }
+    .dropdown-toggle.is-active {
+        border-bottom: none !important;
+    }
+    .navbar-nav > li a.is_active, .navbar-nav .is_active {
+        background: none !important;
+        box-shadow: none !important;
+    }
+    .is_active {
+        border-bottom: 3.5px solid $grey !important;
+    }
+    
+    .navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover, .navbar-default .navbar-nav>.open>a, .navbar-default .navbar-nav>.open>a:focus, .navbar-default .navbar-nav>.open>a:hover, #navbar-collapse .dropdown-toggle.is-active, a.dropdown-toggle.is-active {
+        color: #000;
+        border-bottom: 3.5px solid $grey;
+        background-color: $white;
+        background-image: none !important;
+        box-shadow: none !important;
+    }
+    
+    .navbar {
+        margin-bottom: 0px;
+        border-top: none;
+        border-left: none;
+        border-right: none;
+        border-bottom: 0px solid $white !important;
+        background: none !important;
+        box-shadow: none !important;
+        
+        .navbar-toggle {
+            margin-right: 0px;
+            border-color: $blue;
+            &:hover, &:focus {
+                background-color: rgba(00, 37, 198, .05);
+            }
+        }
+        .navbar-toggle .icon-bar {
+            background-color: $blue; 
+        }
+
+       
+        #block-bootstrap-main-menu .menu .dropdown-menu {
+            border-top: 0px;
+            border-color: 0px;
+            margin-top: 0px;
+            padding-left: 10px;
+            >li {
+                margin: 0px 40px 0px 5px;
+                a {
+                    padding: 10px 0px 10px 10px;
+                    background-color: $white;
+                    border-bottom: none !important;
+                    text-transform: lowercase;
+                    letter-spacing: .7pt;
+                    font-weight: 300;
+                    font-size: 15px;
+                    &:hover {
+                        color: $grey !important;
+                    }
+                }
+            }
+        }
+    }
+    .btn-primary {
+        background-color: $white;
+    }
+}
+/*Fixed*/
+.navbar-fixed {
+    position: fixed;
+    top: 0px;
+    clear: both;
+    margin: auto;
+    width: 100%;
+    z-index: 9999;
+}
+
+/*---- LARGE ----*/
+
+@media #{$large} {
+
+    #navbar-wrapper .navbar {
+        padding-left: 92px;
+        padding-right: 45px;
+    }
+    .navbar-nav.navbar-right {
+        margin-right: -5px;
+    }
+    .navbar-header {
+        width: 100%;
+    }
+
+}
+
+/*----LARGE + DESKTOP---*/
+@media #{$large-desktop} {
+    
+    .navbar-nav.navbar-right {
+        margin-top: 30px;
+        i.glyphicon {
+            font-size: 23px;
+            padding-left: 8px;
+        }
+    }
+    #navbar {
+        a.logo.navbar-btn.pull-left, .navbar-nav.navbar-right {
+            display: none;
+        }
+    }
+}
+
+/*---- DESKTOP + TABLET ----*/
+@media #{$desktop-tablet} {
+    #navbar {
+        a.logo.navbar-btn.pull-left, .navbar-nav.navbar-right {
+            display: none;
+        }
+        .navbar-nav.navbar-right {
+            margin-right: -37px;
+        }
+    }
+
+    #block-bootstrap-search {
+        width: 250px;
+        float: right;
+        margin: 13px -7px -17px 0px;
+    }
+}
+
+/*---- TABLET ----*/
+@media #{$tablet} {
+    
+    .navbar-brand {
+        margin-top: 20px ;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+    }
+    #navbar-wrapper {
+        .navbar-nav > li > a {
+            line-height: 1pt;
+        }
+        .navbar-right {
+            margin-top: 20px;
+        }
+    
+        ul.menu.nav.navbar-nav li a {
+            font-size: 16px;
+            padding: 26px 6px 14px;
+        }
+
+        .navbar #block-bootstrap-search {
+            width: 180px;
+            float: right;
+            margin-top: 8px;
+            .form-group {
+                margin-bottom: 0px;
+            }
+        }
+    }
+}
+/*---- MOBILE ----*/
+@media #{$mobile} {
+    
+    #block-bootstrap-main-menu .menu .dropdown-menu {
+        margin-top: -19px !important;
+    }
+    #navbar-wrapper .is_active {
+        box-shadow: none !important;
+        border-bottom: 3.5px solid $white !important;
+        &:hover {
+            border-bottom: 3.5px solid $white !important;
+        }
+    }
+    #navbar {
+        padding: 0px;
+        .logo img {
+            height: 30px;
+            margin-left: 10px;
+            margin-right: 15px;
+        }
+        a {
+            font-family: 'Bungee Shade';
+            font-size: 22px;
+            margin-top: 10px;
+            color: $blue;
+            letter-spacing: .3pt;
+        }
+        .nav>li>a {
+            position: relative;
+            display: block;
+            border-bottom: 3.5px solid $white;
+            &:hover {
+                border-bottom: 3.5px solid $white !important;
+            }
+        }
+        .navbar-default .navbar-collapse {
+            border: none;
+        }
+        .navbar-default .navbar-toggle {
+            border-color: $orange;
+        }
+        .navbar-default .navbar-toggle .icon-bar {
+            background-color: $orange;
+        }
+        .navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
+            background-color: rgba(233,78,8,0.03);
+        }
+        nav#block-useraccountmenu ul.menu.nav.navbar-nav.navbar-right {
+            margin: 0px -10px;
+            padding: 0px;
+            li {
+                display: inline-block;
+                &:last-child {
+                    float: right;
+                }
+                a {
+                    padding: 0px;
+                    text-transform: capitalize;
+                    font-weight: 500;
+                    margin-bottom: 8px;
+                    color: $grey;
+                    letter-spacing: .1pt;
+                    &:hover {
+                        text-decoration: none;
+                        border-bottom: none !important;
+                    }
+                }
+            }
+        }
+        #block-nav-search {
+            margin-bottom: 15px;
+        }
+    }
+}

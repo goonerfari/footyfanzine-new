@@ -1,0 +1,334 @@
+/* Sidebar */
+aside {
+    h2.block-title {
+        color: $black;
+        font-family: $font_shade;
+        margin-bottom: 15px;
+        margin-left: 8px;
+    }
+    tr, td {
+        background-color: $white;
+        &:hover {
+            background-color: $white;
+        }
+    }
+    .th, td {
+        font-family: $font_sans;
+    }
+    .table>tbody>tr>td {
+        vertical-align: middle;
+        text-align: left;
+        border: none;
+        line-height: 1.25;
+        font-size: 13px;
+        padding-left: 5px;
+    }
+    td.views-field.views-field-field-image, .views-field.views-field-field-image-2 {
+        padding: 4px 4px 4px 6px;
+        margin-bottom: 10px;
+        width: 115px;
+        img {
+            height: 66px;
+            width: 107px;
+        }
+    }
+    td.views-field.views-field-field-title {
+        padding-left: 12px;
+    }
+
+    .views-field.views-field-field-tags {
+        margin-right: -23px;
+    }
+    a {
+        font-family: $font_sans;
+        font-size: 14px;
+        font-weight: 300;
+    }
+    p {
+        font-size: 14px !important;
+    }
+}
+
+.side-affix, .archive-affix {
+    position: fixed;
+}
+
+/* Sidebar Blocks */
+   
+#block-popular-posts, #block-related-posts {
+    h2 {
+        color: $orange;
+        
+    }
+.table-striped > tbody > tr,  .table-striped > tbody > tr:nth-of-type(odd), .table-striped > tbody > tr:nth-of-type(even), .table-striped > tbody > tr:hover, tr {
+        a:hover {
+            color: $orange !important;
+        }
+    }
+}
+#block-related-news, #block-trending-news {
+    .table-striped > tbody > tr,  .table-striped > tbody > tr:nth-of-type(odd), .table-striped > tbody > tr:nth-of-type(even), .table-striped > tbody > tr:hover, tr {
+        a:hover {
+            color: $blue !important;
+        }
+    }
+}
+#block-twitterblock {
+    margin-top: 0px;
+    h2.block-title {
+        font-size: 35px;
+        padding-bottom: 10px;
+        color: $blue;
+        font-family: $font_elsie;
+    }
+}
+#block-related-news, #block-related-posts, #block-popular-posts, #block-trending-news, #block-trending-news-main {
+    h2 {
+        padding: 25px 18px 16px;
+        margin: 0px;
+        font-size: 26px;
+    }
+}
+
+
+#block-trending-news, #block-trending-news-main {
+    h2 {
+        color: $blue;
+    }
+    td, tr {
+        a:hover {
+            color: $blue !important;
+        }
+    }
+}
+#block-related-news, #block-related-posts, #block-popular-posts, #block-twitter-block, #block-trending-posts, #block-trending-news,  #block-trending-news-main {
+    background-color: $white;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0px 0px 11px 1px rgba(0,0,0, .1);
+    .form-group, .table {
+        margin-bottom: 0px;
+    }
+    .table-striped > tbody > tr,  .table-striped > tbody > tr:nth-of-type(odd), .table-striped > tbody > tr:nth-of-type(even), .table-striped > tbody > tr, tr, h2 {
+        background-color: $white;
+        a {
+            color: $black;
+        }
+    }
+}
+
+#block-views-block-related-tags-block-1 h2 {
+    font-size: 35px;
+}
+#block-related-tags h2 {
+    padding-top: 10px;
+}
+#block-archive-block, #block-experts-archive-block, #block-pundit-archive {
+    h2.block-title {
+        color: $orange;
+        margin-top: 25px;
+        font-size: 22px;
+        margin-bottom: 0px;
+        padding-left: 20px;
+        margin-top: 2px;
+    }
+    ul {
+            padding-top: 10px;
+            padding-left: 60px;
+        }
+    }
+    #block-archive-block, #block-experts-archive-block, #block-pundit-archive {
+        ul li a {
+            font-family: $font_ubuntu;
+            color: $grey;
+            font-size: 15px;
+        }
+    }
+    #block-experts-archive-block {
+        margin-top: 150px;
+    }
+    #block-footys-pundits {
+        .table, .table-responsive {
+            tr {
+                background-color: $bg_color !important;
+            }
+            td.views-field.views-field-user-picture {
+                width: 110px;
+                img {
+                    width: 100px;
+                    height: 83px;
+                    border-radius: 50%;
+                    border: 1.5px solid $grey;
+                }
+            }
+            td.views-field.views-field-user-name {
+                h3 {
+                    font-family: $font_ubuntu;
+                    font-weight: 400;
+                    text-transform: capitalize;
+                    font-size: 18px;
+                    a {
+                        font-weight: 500 !important;
+                        text-transform: capitalize;
+                    }
+                }
+            }
+        }
+}
+
+
+/*---- LARGE ----*/
+
+@media #{$large} {
+
+    
+    /* Premier League Table */
+
+    #block-premier-league-table {
+        width: 390px !important;
+        margin-left: -45px;
+        .table {
+            img {
+                width: 30px;
+                height: 30px;
+                max-width: none;
+            }
+            td.views-field.views-field-field-sl-image {
+                width: 50px;
+            }
+            tr {
+                border-bottom: 1px solid rgba(0,0,0, .1);
+            }
+            tr:first-child {
+                border-bottom: 1.5px solid $blue;
+            }
+            tr:nth-child(3) {
+                border-bottom: 1.5px solid rgba(205,9,8,.9);
+            }
+            tr:nth-child(5), tr:nth-child(4) {
+                border-bottom: 1.5px dashed $grey;
+            }
+            tr:nth-child(17) {
+                border-bottom: 1.5px solid $blue;
+            }
+        }
+    }
+    .archive-affix {
+        margin-top: 250px;
+    }
+}
+
+/*---- DESKTOP ----*/
+
+@media #{$desktop} {
+
+    aside {
+        padding: 0px;
+        td.views-field.views-field-field-image, .views-field.views-field-field-image-2 {
+            padding-right: 0px;
+            margin-bottom: 10px;
+            width: 120px;
+            img {
+                height: 70px;
+                width: 100px;
+            }
+        }
+    }
+    .side-affix {
+        margin-top: -250px;
+    }
+    .archive-affix {
+        margin-top: 260px;
+    }
+}
+
+/*----LARGE + DESKTOP---*/
+
+@media #{$large-desktop} {
+    
+    aside {
+        padding-right: 0px !important;
+        margin-top: 0px;
+    }
+    .side-affix {
+        margin-top: -140px !important;
+    }
+    .archive-affix {
+        margin-left: -7px;
+    }
+    aside.col-sm-5.col-md-4.col-md-offset-1.col-lg-4.col-lg-offset-0 {
+        padding: 0px;
+    }
+    .side-affix, .archive-affix, .pundits-affix, .archive-pundits  {
+        position: fixed;
+        width: 301px;
+    }
+    .pundits-affix {
+        margin-top: -185px;
+    }
+    #block-pundit-archive {
+        h2, ul {
+            margin-left: 50px;
+        }
+    }
+    .archive-pundits {
+        margin-top: 125px;
+    }
+
+}
+
+/*---- TABLET ----*/
+
+@media #{$tablet} {
+
+    aside {
+        padding-right: 0px !important;
+        td.views-field.views-field-field-image {
+            padding-right: 0px;
+            margin-bottom: 10px;
+            width: 120px;
+            img {
+                height: 70px;
+                width: 107px;
+            }
+        }
+    }
+    .side-affix {
+        margin-top: -135px !important;
+        width: 270px;
+    }
+    .archive-affix {
+        margin-top: 285px;
+        width: 270px;
+    }
+}
+
+
+/*---- MOBILE ----*/
+
+@media #{$mobile} {
+    
+    aside {
+        .table-responsive {
+            margin-bottom: 0px;
+            border: none;
+        }
+        .view-trending-topics {
+            margin-top: 30px;
+        }
+        h2.block-title {
+            margin-bottom: 0px !important;
+            margin-right: 0px !important;
+        }
+        td.views-field.views-field-field-image img {
+            min-height: 90px !important;
+            max-height: 90px !important;
+            margin: 0px !important;
+        }
+        
+        .table-responsive>.table>tbody>tr>td {
+            white-space: inherit !important;
+        }
+    }
+
+}

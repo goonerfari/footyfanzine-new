@@ -1,0 +1,769 @@
+@import "variables.scss";
+
+@import url('https://fonts.googleapis.com/css?family=Vesper+Libre:400,500,600|Merriweather:400,700|Open+Sans:300,400,500,600|Ubuntu:300,400,500,700|Elsie:900|Bungee+Shade');
+
+/* Partials */
+@import "partials/topnav.scss";
+@import "partials/navbar.scss";
+@import "partials/header.scss";
+@import "partials/aside.scss";
+@import "partials/article.scss";
+@import "partials/search.scss";
+@import "partials/footer.scss";
+
+
+/* Pages */
+@import "pages/blog.scss";
+@import "pages/frontpage.scss";
+@import "pages/videos.scss";
+@import "pages/oldschool.scss";
+@import "pages/pundits.scss";
+@import "pages/teams.scss";
+@import "pages/news.scss";
+
+
+.nav-tabs {
+    display: none;
+}
+/* Body */
+    body {
+        background-color: $bg_color;
+        overflow-x: hidden;
+    }
+    a:hover, a:focus {
+        text-decoration: none;    
+        outline: none;
+        -moz-box-shadow: none;
+        -webkit-box-shadow: none;
+        box-shadow: none;
+    }
+    *:focus {
+        outline: none;
+        -moz-box-shadow: none;
+        -webkit-box-shadow: none;
+        box-shadow: none;
+    }
+    strong {
+        font-weight: 500;
+    }
+
+    h1 {
+        letter-spacing: .01pt;
+        font-size: 40px;
+    }
+    h1, p:hover, h2.block-title, .field-label, td {
+        cursor: default;
+    }
+
+    hr {
+        border-top: 1px solid $blue;
+    }
+
+    hr.narrow {
+        margin: 30px 200px 20px;
+    }
+    .alert {
+        margin-top: 20px;
+    }
+
+    /* Fonts  */
+
+    .elsie {
+        font-family: $font_elsie;
+    }
+    .bitter {
+        font-family: $font_bitter;
+    }
+    .sans {
+        font-family: $font_sans;
+    }
+    .shade {
+        font-family: $font_shade;
+    }
+    .ubuntu {
+        font-family: $font_ubuntu;
+        font-weight: 300;
+    }
+    /* Colors */
+    .orange, .orange a {
+        color: $orange;
+        border-color: $orange;
+    }
+    .blue, .blue a {
+        color: $blue;
+        border-color: $blue;
+    }
+    .green a, .green {
+        color: $green;
+        border-color: $green;
+    }
+    .wheat, .wheat a {
+        color: $wheat;
+    }
+    .white, .white a {
+        color: $white;
+    }
+    .grey, .grey a {
+        color: $grey;
+    }
+    .black, .black a {
+        color: $black;
+    }
+    /* Listed Articles */
+
+    .article-title {
+        font-family: $font_bitter;
+        font-weight: 300;
+        font-size: 17px;
+        padding: 6px 0px;
+        a {
+            color: $grey;
+        }
+    }
+    .article-body {
+        font-family: $font_sans;
+        color: $grey;
+        font-size: 14px;
+        padding-top: 8px;
+        font-weight: 300;
+    }
+    .article-image img {
+        width: 100%;
+    }
+    
+    .search-page-form {
+        width: 80%;
+    }
+    
+
+/* Breadcrumb */
+    .breadcrumb {
+        font-weight: 900;
+        font-family: $font_sans;
+        text-transform: uppercase;
+        color: #222;
+        font-size: 17px;
+        letter-spacing: 0.7px;
+        border: 1px solid $grey;
+        margin-top: 17px;
+        li:first-child a {
+            color: $grey;
+            font-size: 20px;
+            font-family: $font_ubuntu;
+        }
+    }
+    .breadcrumb > .active {
+        // color: $blue;
+        font-weight: 300;
+        font-family: $font_sans;
+        text-transform: capitalize;
+        font-size: 15px;
+    }
+
+
+/* Edit Section */
+
+    .nav-tabs {
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+
+
+/* Content */
+    #content-wrapper{
+        margin: 30px auto;
+        .container {
+
+            section.col-sm-7 {
+                .page-header {
+                    font-family: $font_bitter;
+                    border-bottom: none !important;
+                    text-align: left;
+                    line-height: .9;
+                }
+            }
+        }
+        section {
+            .col-xs-12 {
+                padding-left: 7px;
+                padding-right: 7px;
+            }
+            nav {
+                .pager {
+                    margin: 0px 40% 0px;
+                    display: inline-block;
+                    a {
+                        background-color: transparent !important;
+                        border: none !important;
+                        font-size: 33px;
+                        color: $grey;
+                    }
+                }
+                .pager .next>a, .pager .next>span {
+                    float: right;
+                }
+                .pagination>li>a {
+                    color: $black;
+                    border-color: $orange;
+                }
+            }
+            .pagination>li>a {
+                background-color: $bg_color;
+            }
+            .pager__item--next, .pager__item--previous  {
+                a, a:hover {
+                    background-color: rgba(255, 155, 80, .3) !important;
+                }
+            }
+            .is-active.active a, .is-active.active a:hover, .pager__item--first a, .pager__item--last a{
+                background-color: $orange !important;
+                color: $white !important;
+            }
+        }
+    }
+    
+    /* Blog, Oldschool Page */
+
+    .view-taxonomy-term .views-field.views-field-title a {
+        color: $grey;
+    }
+    .view-taxonomy-term .views-field.views-field-title a:hover {
+        color: $blue;
+    }
+
+    h1.col-md-4.panel-heading {
+        font-size: 30px;
+        font-family: $font_ubuntu;
+        margin-bottom: 30px;
+    }
+
+    .view-blog, .view-old-school {
+        
+        h2.block-title {
+            padding-top: 40px;
+            padding-left: 15px;
+            font-size: 34px;
+        }
+        .views-field.views-field-title {
+            font-family: $font_bitter;
+            font-size: 22px;
+            line-height: 1.2;
+            margin: 18px 0px 10px;
+             
+        }
+        .views-field.views-field-body {
+            margin-top: 10px;
+        }
+    }
+    h1.shade {
+        margin-top: 30px;
+        margin-bottom: 33px;
+        padding-left: 15px;
+    }
+    
+    
+    
+    #block-league-info {
+        margin-bottom: 54px;
+    }
+    .view-league-info {
+        .views-field.views-field-field-logo {
+            width: 185px;
+            height: 185px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        img {
+            width: 100%;
+        }
+        h1 {
+            font-size: 30px;
+            text-align: left;
+            font-family: $font_elsie;
+            width: 250px;
+        }
+    }
+    /* Blog */
+    .view-blog , .view-old-school {
+        .view-header hr {
+            width: 96%;
+            margin: 30px auto 15px;
+        }
+    }
+    .view-blog, .view-old-school {
+        .views-field.views-field-title h3 {
+            margin-bottom: 20px;
+            margin-top: 0px;    
+        }
+    }
+
+    .block-views-blockcomments-recent-block-1 h2 {
+        font-weight: 500;
+        font-family: $font_ubuntu;
+        letter-spacing: -.9pt;
+        font-size: 31px;
+    }
+    .views-element-container.contextual-region.form-group {
+        border-bottom: 1px solid transparent;
+    }
+    .feed-icons a {
+        margin-top: 15px;
+        font-family: $font_ubuntu;
+        color: $blue;
+        font-size: 18px;
+        font-weight: 500;
+    }
+
+    .field--name-body p {
+        font-family: $font_ubuntu;
+        font-size: 15.5px;
+        line-height: 1.2;
+        font-weight: lighter;
+        letter-spacing: .3pt;
+    }
+    h2.block-title {
+        margin-bottom: 15px;
+    }
+
+
+/* Tags */
+
+    .field > .field__items, .field > .field--item {
+        margin-top: 15px;
+    }
+    .field--name-field-tags {
+        margin-top: 15px;
+        padding-left: 0px;
+        font-family: $font_ubuntu;
+        div.field--label {
+            font-family: $font_ubuntu;
+            font-weight: 500;
+            font-size: 17px;
+            margin-left: 8px;
+        }
+        .field-content {
+            margin-bottom: 12px;
+        }
+    }
+    .field--name-field-tags {
+        .field--item {
+            display: inline-flex;
+        }
+    }
+    .field--name-field-tags a:hover, .field--name-field-category a:hover, .field--name-field-teams a:hover {
+        background-color: $black;
+        text-decoration: none;
+        border-color: $black;
+        color: $white;
+    }
+
+    #block-trending-topics {
+        .views-field.views-field-name a {
+            &:first-child {
+                margin-left: 8px;
+            }
+        }
+        .views-row {
+            display: inline-flex;
+            margin-bottom: -16px;
+            height: 50px;
+        }
+    } 
+    #block-trending-topics .views-field-name a, 
+    article .field--name-field-tags a {
+        border: 1px solid $black;
+        border-radius: 16px;
+        padding: 5px 10px;
+        margin-bottom: 5px;
+        margin-right: 5px;
+        font-size: 13px;
+        color: $black;
+        font-family: $font_ubuntu;
+        background-color: $bg_color;
+    }
+    #block-trending-topics .views-field-name a:hover, 
+    .field--name-field-tags > .field__items > .field--item a:hover, 
+    .field--name-field-tags > .field__items > .field--item a:focus {
+        color: $white;
+        border-color: $black;
+        background-color: $black;
+        text-decoration: none;
+    }
+    .ytp-title {
+        background-color: rgba(255, 255, 255, .1) !important;
+    }
+    .ytp-large-play-button {
+        top: 60% !important;
+        left: 30% !important;
+    }
+
+    /*---Subscribe--*/
+
+        .feed-icons {
+            margin-top: 15px;
+        }
+    
+
+/* Second Content */
+    #second-container, #second-container .alert-info {
+        background-color: #272727;
+    }
+    #second-container {
+        border-bottom: 1px solid white;
+    }
+    #second-container .alert-info {
+        border: none;
+        hr {
+            display: none;
+        }
+    }
+
+
+
+
+
+/*---- LARGE ----*/
+
+@media #{$large} {
+
+    .breadcrumb {
+        margin-right: 20px;
+    }
+    .nav-tabs {
+        margin-left: 100px !important;
+        margin-right: 100px !important;
+    }
+    
+    #content-wrapper {
+        .container {
+            padding: 0px 98px;
+            .page-header {
+                margin-top: 15px;
+                font-size: 39px;
+                padding: 20px 20px 0px 0px;
+            }
+        }
+    }
+    
+    .view-blog, .view-old-school {
+        img.img-responsive {
+            height: 350px;
+            width: 100%;
+        }
+        p {
+            font-size: 16px;
+            font-weight: 300;
+        }
+    }
+}
+
+/*---- DESKTOP ----*/
+@media #{$desktop} {
+
+    i.fa.fa-chevron-circle-left {
+        margin-left: -27px;
+    }
+    i.fa.fa-chevron-circle-right {
+        margin-left: 695px;
+        position: absolute;
+    }
+}
+
+/*----LARGE + DESKTOP---*/
+@media #{$large-desktop} {
+    
+    .a2a_kit a {
+        cursor: pointer;
+        margin-top: 4px;
+        width: 45px;
+        span, span:hover {
+            width: 100% !important;
+            height: 100% !important;
+            border-radius: 49% !important;
+            padding: 6px;
+            margin: 3px;
+        }
+    }
+    blockquote {
+        padding: 11px 41px;
+        margin: 30px 55px 30px;
+        font-size: 12px;
+        border-left: 5px solid $blue;
+        background-color: rgba(0,159,183, .05);
+    }
+    #block-front-news-section {
+        .col-xs-12 {
+            padding-left: 7px;
+            padding-right: 7px;
+        }
+    }
+    .view-front-blog-section, .view-front-section, .view-blog-experts-page, #block-latest-epl, #block-latest-laliga, #block-front-news-section, #block-latest-uefacl, #block-legends-front, #block-legends{
+        
+        .views-field-field-image, .views-field-field-logo {
+            position: relative;
+            overflow: hidden;
+            width: 100%;
+            &:hover img {
+                -moz-transform: scale(1.1);
+                -webkit-transform: scale(1.1);
+                transform: scale(1.1);
+            }
+            img {
+                width: 100%;
+                -moz-transition: all 0.3s;
+                -webkit-transition: all 0.3s;
+                transition: all 0.3s;
+            }
+        }
+        .views-field-field-image {
+            height: 157px;
+            &:hover img {
+                max-height: 157px;
+            }
+            img {
+                height: 157px;
+            }
+        }
+        .views-field-field-logo {
+            height: 200px;
+            &:hover img {
+                max-height: 200px;
+            }
+            img {
+                height: 200px;
+            }
+        }
+    }
+
+    #block-latest-epl, #block-latest-uefacl, #block-latest-laliga {
+        .article-image img {
+            max-height: 170px;
+            min-height: 170px;
+        }
+        h2.block-title {
+            border-bottom: 1px solid $black;
+        }
+    }
+    #block-uefacl {
+        h2 {
+            padding-right: 15px;
+            padding-bottom: 20px;
+        }
+        h3 {
+            float: left;
+            padding-right: 15px;
+            font-size: 16px;
+            a {
+                color: $black;
+                &:hover {
+                    color: $orange;
+                }
+            }
+        }
+        .views-field {
+            padding-left: 8px !important;
+            padding-right: 8px !important;
+            font-family: $font_bitter;
+        }
+        .views-field-field-tags {
+                margin-top: 12px;
+            }
+        .views-field-field-image img {
+            max-height: 144px;
+            min-height: 144px;
+            width: 100%;
+        }
+    }
+    section.col-sm-7.col-md-8.col-lg-8 {
+        margin-top: 0px;
+        padding-left: 0px;
+        padding-right: 15px;
+    }
+}
+
+/*---- TABLET ----*/
+@media #{$tablet} {
+    
+    #block-latest-scoop {
+        td.views-field.views-field-field-image.views-align-center {
+                img {
+                min-height: 150px;
+                max-height: 150px;
+            }
+        }
+        vertical-align: middle !important;
+        padding: 5px;
+        a {
+            font-size: 15px !important;
+        }
+        .views-field-title, .views-field-addtoany-share {
+            padding: 5px !important;
+            vertical-align: middle !important;
+        }
+    }
+
+    .social-footer {
+        padding-right: 0px;
+        ul {
+            padding-left: 28px;
+            li .fa {
+                font-size: 30px;
+            }
+        }
+    }
+    .a2a_kit a {
+        cursor: pointer;
+        margin-top: 8px;
+        width: 40px;
+        span, span:hover {
+            width: 100% !important;
+            height: 100% !important;
+            border-radius: 49% !important;
+            padding: 6px;
+            margin: 3px;
+        }
+    }
+}
+
+/*---- DESKTOP + TABLET ----*/
+@media #{$desktop-tablet} {
+    
+    section.col-sm-7.col-md-8.col-lg-8 {
+        padding-left: 0px;
+    }
+    
+    .view-latest-scoop h3.views-field.views-field-title {
+        height: inherit;
+        margin-bottom: 8px;
+    }
+    
+}
+/*---- MOBILE ----*/
+@media #{$mobile} {
+
+    .container>.navbar-header, .container>.navbar-collapse, h1.page-header, .author {
+        margin-right: 15px;
+        margin-left: 15px;
+        clear: both;
+    }
+    section.col-sm-7 {
+        .page-header {
+            font-family: $font_bitter;
+            font-size: 25px !important;
+            margin-left: 10px; 
+            margin-bottom: 20px; 
+            border-bottom: none !important;          
+        }
+    }
+    h2.block-title {
+        font-size: 30px;
+        margin-bottom: 15px;
+        padding-left: 15px;
+        letter-spacing: .3pt;
+    }
+    .video-embed-field-responsive-video {
+        width: 100%;
+        border: none !important;
+    }
+    .view-blog {
+        .views-field-title a {
+            font-size: 20px;
+        }
+        h1 {
+            padding-left: 10px;
+        }
+        .views-field-title, p {
+            padding-left: 0px;
+            padding-right: 0px;
+        }
+        p {
+            font-size: 15px;
+        }
+    }   
+    .carousel-indicators {
+        bottom: -1px;
+        li {
+            width: 13px;
+            height: 13px;
+            margin-bottom: 2px;
+        }
+        .active {
+            width: 18px;
+            height: 18px;
+        }
+    }
+    
+    #content-wrapper {
+        .container-fluid, .col-sm-7 {
+            padding-left: 0px;
+            padding-right: 0px;
+            // .article-title {
+            //     padding-left: 15px;
+            // }
+            img {
+                width: 100%;
+                margin: 0px;
+                max-height: 200px;
+                min-height: 200px;
+            }
+        }
+    }
+    
+    .breadcrumb {
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+    
+    .field--name-field-image img {
+        height: 200px;
+    }
+    .field--name-field-tags {
+        margin-left: 15px;
+        margin-bottom: 25px;
+        a {
+            margin-right: 10px;
+        }
+    }
+    #block-bootstrap-main-menu > ul.menu.nav.navbar-nav.navbar-right {
+        margin-top: 30px;
+        li {
+            float: right;
+            margin-right: 5px;
+            a {
+                padding-top: 0px;
+            }
+        }
+        li:first-child {
+            padding-top: 10px;
+        }
+    }
+    #main-wrapper .container-fluid, #content-wrapper .container, #old-school-container .container, #old-school-container section, #content-wrapper .col-xs-12, #content-wrapper .col-sm-7, #content-wrapper article {
+        margin-right: 0px;
+        margin-left: 0px;
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+    
+    
+    
+    .view-team-news h3, p {
+        padding-left: 0px;
+        .views-field.views-field-field-image img {
+            min-height: 180px;
+            max-height: 180px;
+            width: 100%;
+        }
+    }
+    
+
+    #second-container {
+        .views-field.views-field-user-picture.col-md-12 {
+            padding: 0px;
+        }
+        
+    }
+}
+
+.your-node-selector .contextual {
+    display: none!important;
+}
