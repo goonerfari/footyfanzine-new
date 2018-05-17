@@ -1,7 +1,7 @@
 /* Old School */
 
 .old-school, #old-school-container {
-    background-image: url('/sites/footyzone.dev.dd/files/oldschoolbg.jpg');
+    background-image: url('/sites/default/files/oldschoolbg.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -22,7 +22,7 @@
     .form-group {
         margin-bottom: 0px;
         .views-field-field-logo {
-            border-image: url('/sites/footyzone.dev.dd/files/frame.png') 60 round;
+            border-image: url('/sites/default/files/frame.png') 60 round;
             border: 10px solid transparent;
         }
         img {
@@ -62,7 +62,7 @@
 .view-old-school, .view-old-school-page, #block-old-school-front {
     
     .views-field-field-image {
-        border-image: url('/sites/footyzone.dev.dd/files/frame.png') 60 round;
+        border-image: url('/sites/default/files/frame.png') 60 round;
         border: 10px solid transparent;
         margin-bottom: 0px !important;
         margin-top: 0px;
@@ -94,7 +94,7 @@
         .views-field-field-logo {
             margin-top: 35px;
             // border: 30px solid #222;
-            border-image: url('/sites/footyzone.dev.dd/files/frame.png') 60 round;
+            border-image: url('/sites/default/files/frame.png') 60 round;
             border: 10px solid transparent;
             img {
                 min-height: 200px;
