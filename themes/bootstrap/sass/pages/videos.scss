@@ -150,18 +150,19 @@ article.videos, .view-videos-page, .view-videos-view {
     img {
         width: 100%;
         padding-right: 9px;
-        min-height: 100px;
-        max-height: 100px;
     }
-
     
     .slick--main {
         .slide__caption {
             line-height: 1;
             font-family: $font_bitter;
             font-size: 18px;
+            img {
+                min-height: 300px;
+                max-height: 300px;
+            }
         }
-
+        
         button {
             font-size: 30px;
             background-color: transparent;
@@ -207,7 +208,7 @@ article.videos, .view-videos-page, .view-videos-view {
                 color: $green;
             }
         }
-        .video-embed-field-responsive-video {
+        img {
             max-height: 130px;
             min-height: 130px;
             margin-bottom: 10px;
