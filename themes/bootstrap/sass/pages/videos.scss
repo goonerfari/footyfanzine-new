@@ -145,7 +145,8 @@ article.videos, .view-videos-page, .view-videos-view {
             max-height: 130px;
             min-height: 130px;
         }
-        a {
+    }
+    img a {
             position: relative;
             &:before {
                 content: '\f01d';
