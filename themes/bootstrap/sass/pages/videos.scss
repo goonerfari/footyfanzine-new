@@ -138,7 +138,7 @@ article.videos, .view-videos-page, .view-videos-view {
         }
     }
 }
-.view-videos-page, #block-front-videos {
+.view-videos-page {
     .views-field-field-image {
         img {
             width: 100%;
@@ -146,20 +146,19 @@ article.videos, .view-videos-page, .view-videos-view {
             min-height: 130px;
         }
     }
-    img a {
-            position: relative;
-            &:before {
-                content: '\f01d';
-                font-family: 'FontAwesome';
-                font-size: 40px !important;
-                position: absolute;
-                color: white;
-                z-index: 9999;
-                margin-left: 15px;
-                margin-top: 70px;
-            }
+    a {
+        position: relative;
+        &:before {
+            content: '\f01d';
+            font-family: 'FontAwesome';
+            font-size: 40px !important;
+            position: absolute;
+            color: white;
+            z-index: 9999;
+            margin-left: 15px;
+            margin-top: 70px;
         }
-    }   
+    }
 }
 
 #block-front-videos {
@@ -186,7 +185,19 @@ article.videos, .view-videos-page, .view-videos-view {
                 margin-bottom: 9px;
             }
         }
-        
+        a {
+            position: relative;
+            &:before {
+                content: '\f01d';
+                font-family: 'FontAwesome';
+                font-size: 80px !important;
+                position: absolute;
+                color: white;
+                z-index: 9999;
+                margin-left: 115px;
+                margin-top: 170px;
+            }
+        }
         button {
             font-size: 30px;
             background-color: transparent;
@@ -379,10 +390,10 @@ article.videos, .view-videos-page, .view-videos-view {
 
 @media #{$large+desktop} {
     #block-front-videos {
-        .video-embed-field-responsive-video {
-            max-height: 333px;
-            min-height: 333px;
-            margin: 10px auto 20px;
+        .slick-main {
+            img {
+
+            }
         }
     }
 }
