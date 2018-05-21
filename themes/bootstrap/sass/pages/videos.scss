@@ -191,6 +191,7 @@ article.videos, .view-videos-page, .view-videos-view {
                 -webkit-transform: scale(1.1);
                 transform: scale(1.1);
                 max-height: 400px;
+                min-height: 400px;
             }
         }
         a {
