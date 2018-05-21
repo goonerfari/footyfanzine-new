@@ -199,16 +199,15 @@ article.videos, .view-videos-page, .view-videos-view {
             }
         }
         a {
-            position: relative;
             &:before {
                 content: '\f01d';
                 font-family: 'FontAwesome';
                 font-size: 80px !important;
-                position: absolute;
+                position: fixed;
                 color: white;
                 z-index: 9999;
-                margin-left: 115px;
-                margin-top: 170px;
+                margin-left: 285px;
+                margin-top: 140px;
             }
         }
         button {
