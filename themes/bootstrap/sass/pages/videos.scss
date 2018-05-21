@@ -173,12 +173,12 @@ article.videos, .view-videos-page, .view-videos-view {
             line-height: 1;
             font-family: $font_bitter;
             font-size: 18px;
-            height: 400px;
+            height: 447px;
             img {
                 position: relative;
                 overflow: hidden;
-                min-height: 400px;
-                max-height: 400px;
+                min-height: 447px;
+                max-height: 447px;
                 margin-bottom: 9px;
                 width: 100%;
                 -moz-transition: all 0.3s;
@@ -189,7 +189,7 @@ article.videos, .view-videos-page, .view-videos-view {
                 -moz-transform: scale(1.1);
                 -webkit-transform: scale(1.1);
                 transform: scale(1.1);
-                max-height: 400px;
+                max-height: 447px;
             }
         }
         a {
